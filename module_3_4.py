@@ -1,9 +1,9 @@
-def single_root_words(root_word, *other_words):
+def single_root_words(root_word, *other_words): #создаём функцию и список в ней
     same_words = []
-    for i in other_words:
-        if root_word.lower() in i.lower():
+    for i in other_words: # создаём цикл
+        if root_word.lower() in i.lower(): # проверяем наличие проверочного слова в остальных словах
             same_words.append(i)
-        elif i.lower() in root_word.lower():
+        elif i.lower() in root_word.lower(): # проверяем наличие остальных слов в проверочном
             same_words.append(i)
     return same_words
 
